@@ -25,7 +25,7 @@ The code’s major goals include:
 
 1. **Quantum-Like HPC**  
    - We treat each qudit (multi-level quantum unit) in HPC memory, performing random gates and partial decoherence.  
-   - \(\psi=44.8,\xi=3721.8,\tau=64713.97,\epsilon=0.28082,\phi=1.61803\) are approximate constants from a theoretical framework.  
+   - (ψ=44.8, ξ=3721.8, τ=64713.97, ε=0.28082, φ=1.61803) are approximate constants from a theoretical framework.  
    - The HPC doping-layers offset or scale coherence times, gating random transformations.
 
 2. **Doping-Layers**  
