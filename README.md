@@ -1,5 +1,5 @@
 # cli
-## A cli to learn advanced computing concepts
+### A cli to learn advanced computing concepts
 
 **HPC Quantum-Inspired CLI: Concise Overview of Commands and Purpose**
 
