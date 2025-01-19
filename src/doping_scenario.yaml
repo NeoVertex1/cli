@@ -1,0 +1,24 @@
+# doping_scenario.yaml
+
+dimension: 5
+protection_level: 4
+doping_randomize: false
+doping_strength: 0.0
+doping_layers:
+  - dopant_conc: 0.10
+  - dopant_conc: 0.05
+
+noise_model: "gaussian"
+temperature: 0.5
+advanced_ec: false
+error_correction_threshold: 0.75
+
+concurrency: 1
+use_slurm: false
+param_dims: [5]
+param_prots: [4]
+param_trials: 50
+param_output: "doping_output.json"
+
+doping_correl_dist: 0.0
+

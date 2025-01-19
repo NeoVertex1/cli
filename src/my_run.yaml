@@ -1,0 +1,15 @@
+dimension: 4
+protection_level: 5
+doping_randomize: true
+doping_strength: 0.1
+noise_model: random_telegraph
+temperature: 0.5
+concurrency: 4
+use_slurm: false
+param_dims: [3,4]
+param_prots: [3,5]
+param_trials: 100
+param_output: results.json
+ml_algorithm: "random"
+ml_episodes: 10
+

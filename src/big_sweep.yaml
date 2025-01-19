@@ -1,0 +1,26 @@
+dimension: 4
+protection_level: 3
+doping_randomize: true
+doping_strength: 0.2
+doping_layers:
+  - dopant_conc: 0.05
+  - dopant_conc: 0.02
+noise_model: "1/f"
+temperature: 0.3
+advanced_ec: true
+error_correction_threshold: 0.70
+
+concurrency: 4
+use_slurm: false
+job_name: "big_sweep_job"
+slurm_time: "02:00:00"
+slurm_nodes: 2
+slurm_ntasks: 4
+
+param_dims: [3, 4, 5, 6]
+param_prots: [3, 4, 5]
+param_trials: 200
+param_output: "big_sweep_results.json"
+
+doping_correl_dist: 0.05
+
