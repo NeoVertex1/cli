@@ -49,7 +49,7 @@ The code’s major goals include:
    - Python 3, plus `numpy`, `matplotlib`, `PIL (Pillow)`, `click`, and `yaml`.
 
 2. **CLI Commands**  
-   The `cli_v1.py` script has multiple subcommands. Each subcommand addresses a distinct HPC scenario:
+   The `cli.py` script has multiple subcommands. Each subcommand addresses a distinct HPC scenario:
 
    **a) `show-constants`**  
    - Prints fundamental HPC constants (ψ, ξ, τ, ε, φ).  
@@ -88,7 +88,7 @@ The code’s major goals include:
    - A visually interesting subcommand that applies HPC doping-layers logic and random HPC gates to each block of an image, producing “glitch-art.”  
    - Example usage:
      ```bash
-     python cli_v1.py glitch-image \
+     python cli.py glitch-image \
         -i input.jpg -o out.png \
         --dimension 4 --protection 5 \
         --block-size 8 --noise-model random_telegraph \
@@ -102,13 +102,13 @@ The code’s major goals include:
 
 1. **Basic Single Qudit**  
    ```bash
-   python cli_v1.py run-sim --config my_run.yaml --trials 100
+   python cli.py run-sim --config my_run.yaml --trials 100
    ```
    This loads HPC config from `my_run.yaml`, sets dimension/protection from it, and does 100 random gating cycles. The final fidelity is displayed as a float.
 
 2. **Parallel Sweep**  
    ```bash
-   python cli_v1.py parallel-sweep --config big_sweep.yaml
+   python cli.py parallel-sweep --config big_sweep.yaml
    ```
    Suppose `big_sweep.yaml` enumerates `param_dims: [3,4,5,6]` and `param_prots: [3,4,5]`. This command calculates HPC fidelity for each dimension–protection pair, printing lines like:
    ```
@@ -119,7 +119,7 @@ The code’s major goals include:
 
 3. **Image Glitch**  
    ```bash
-   python cli_v1.py glitch-image -i cityscape.jpg -o glitched_city.png -d 4 -p 3 --block-size 8 --noise-model=1/f
+   python cli.py glitch-image -i cityscape.jpg -o glitched_city.png -d 4 -p 3 --block-size 8 --noise-model=1/f
    ```
    - Splits the image into 8×8 pixel blocks, each block viewed as HPC qudit dimension=4, protection=3.  
    - Applies HPC doping-layers and gates.  
