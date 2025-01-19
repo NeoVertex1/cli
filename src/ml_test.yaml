@@ -1,0 +1,28 @@
+# ml_test.yaml
+
+dimension: 3
+protection_level: 3
+doping_randomize: true
+doping_strength: 0.1
+doping_layers:
+  - dopant_conc: 0.08
+
+noise_model: "random_telegraph"
+temperature: 0.2
+advanced_ec: false
+error_correction_threshold: 0.80
+
+# HPC concurrency or single-thread
+concurrency: 2
+use_slurm: false
+
+# ML parameters
+ml_algorithm: "random"
+ml_episodes: 20
+
+param_dims: [3]
+param_prots: [3]
+param_trials: 20
+param_output: "ml_test_results.json"
+doping_correl_dist: 0.02
+
