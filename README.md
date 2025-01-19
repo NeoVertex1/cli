@@ -3,6 +3,9 @@
 ### a cli tool to try out advanced computation operations
 
 
+> deps: `pip install pyyaml click numpy matplotlib pillow`
+
+
 ## Introduction
 This code suite implements a **classical HPC** (High Performance Computing) approach, borrowing inspiration from quantum theoretical concepts (e.g., Morphotensorial Field Theory, doping-layers, multi-qudit states, and random HPC noise). It does not run on actual quantum hardware. Instead, it simulates “quantum-like” processes to produce results that might interest:
 
